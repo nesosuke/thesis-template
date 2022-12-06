@@ -1,24 +1,31 @@
 \documentclass[a4paper,12ptj,twoside,openany]{ltjsarticle}
 
+\newcommand{\texfilespath}{texfiles} % Path to tex files, modify if needed
+
 \input{settings/packages.tex}
 \input{settings/layout.tex}
 
-\input{texfiles/paper_info.tex}
+\input{\texfilespath/paper_info.tex}
+
+\include{settings/titlepage.tex}
+
 
 \begin{document}
-\include{settings/titlepage.tex}
+\newgeometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\maketitle
+\restoregeometry
 
 \pagenumbering{roman}
 \tableofcontents
 \cleardoublepage
 
 \pagenumbering{arabic}
-\include{texfiles/10.introduction.tex}
-\include{texfiles/21.chapter1.tex}
-\include{texfiles/22.chapter2.tex}
-\include{texfiles/23.chapter3.tex}
-\include{texfiles/80.conclusion.tex}
-\include{texfiles/90.acknowledgements.tex}
-\include{texfiles/99.references.tex}
+\include{\texfilespath/10.introduction.tex}
+\include{\texfilespath/21.chapter1.tex}
+\include{\texfilespath/22.chapter2.tex}
+\include{\texfilespath/23.chapter3.tex}
+\include{\texfilespath/80.conclusion.tex}
+\include{\texfilespath/90.acknowledgements.tex}
+\include{\texfilespath/99.references.tex}
 
 \end{document}
