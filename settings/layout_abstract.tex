@@ -1,0 +1,33 @@
+% 全体設定
+\renewcommand{\rmdefault}{ptm}  % デフォルトフォントの変更: Times New Roman
+\renewcommand{\sfdefault}{phv}  % デフォルトフォントの変更: Helvetica
+\renewcommand{\ttdefault}{pcr}  % デフォルトフォントの変更: Courier
+% ページ設定
+\usepackage[margin=25mm]{geometry}
+\pagestyle{empty}
+\def\linesparpage#1{
+    \baselineskip=\textheight
+    \divide\baselineskip by #1
+} % 1ページあたりの行数
+\linesparpage{21}
+\renewcommand{\baselinestretch}{0.80}
+% 見出し関連
+\titleformat*{\section}{\bfseries\normalsize} % セクション見出しのフォントサイズ
+\titleformat*{\subsection}{\normalsize} % サブセクション見出しのフォントサイズ
+\sectiondot{section} % セクション見出しの数字のドットを有効化
+\sectiondot{subsection} % サブセクション見出しの数字のドットを有効化
+% 図表関連
+\renewcommand{\figurename}{図} % 図番号を「図」に変更
+\renewcommand{\tablename}{表} % 表番号を「表」に変更
+% 文献関連
+\renewcommand{\cite}[1]{\textsuperscript{(#1)}} % 参照文献の番号を上付きに変更
+% タイトル関連
+\newcommand{\makeabstracttitle}{
+\twocolumn[
+\begin{center}
+    {\large \thesistitle}
+\end{center}
+\begin{flushright}
+    \region{　}\thesisauthor
+\end{flushright}
+]}

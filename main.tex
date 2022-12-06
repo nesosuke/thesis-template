@@ -1,14 +1,8 @@
 \documentclass[a4paper,12ptj,twoside,openany]{ltjsarticle}
-
-\newcommand{\texfilespath}{texfiles} % Path to tex files, modify if needed
-
+\input{texfiles/paper_info}
 \input{settings/packages}
 \input{settings/layout}
-
-\input{\texfilespath/paper_info}
-
-\include{settings/titlepage}
-
+\input{settings/titlepage}
 
 \begin{document}
 \newgeometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
@@ -20,12 +14,12 @@
 \cleardoublepage
 
 \pagenumbering{arabic}
-\include{\texfilespath/10.introduction}
-\include{\texfilespath/21.chapter1}
-\include{\texfilespath/22.chapter2}
-\include{\texfilespath/23.chapter3}
-\include{\texfilespath/80.conclusion}
-\include{\texfilespath/90.acknowledgements}
-\include{\texfilespath/99.references}
+\include{texfiles/10.introduction}
+\include{texfiles/21.chapter1}
+\include{texfiles/22.chapter2}
+\include{texfiles/23.chapter3}
+\include{texfiles/80.conclusion}
+\include{texfiles/90.acknowledgements}
+\include{texfiles/99.references}
 
 \end{document}
