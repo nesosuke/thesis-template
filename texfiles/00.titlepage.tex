@@ -1,0 +1,63 @@
+\renewcommand{\maketitle}{ \begin{titlepage}
+\begin{center}
+
+\fontsize{12pt}{0cm}\selectfont
+\thispagestyle{empty}
+\vspace*{1cm}
+
+{\fontsize{24pt}{0cm}\selectfont\titletitle}
+
+\vspace{2.5cm}
+\end{center}
+
+題目
+\begin{center}
+    {\fontsize{18pt}{0cm}\selectfont\thesistitle}
+    \if{\englishtitle}{}
+        {\fontsize{16pt}{0cm}\selectfont\englishtitle}
+        \else
+        \vspace{32pt}
+    \fi
+\end{center}
+
+\vspace{3cm}
+
+\bigskip
+
+\newcommand{\authorinfo}{ %
+\begin{center}
+    \begin{table}[ht]
+        \begin{tabular}{cll}
+        {氏名}     &  & \thesisauthor                                                             \\
+                   &  &                                                                           \\
+        {所属教育分野} &  & \region                                                                   \\
+                   &  &                                                                           \\
+        {指導教員}&  & \teacherone
+        \if{\teachertwo}{}{
+                & & \\ \teachertwo}
+        \fi
+        \if{\teacherthree}{} {
+                & & \\ \teachertwo}
+        \fi
+        \end{tabular}
+        \end{table}
+\end{center}
+\if{\teachertwo}{}
+    \\
+\fi
+\if{\teacherthree}{}
+    \\
+\fi
+}
+
+\authorinfo
+
+\vspace{2cm}
+
+\begin{center}
+    \university\faculty\department \\
+    \vspace{12pt}
+
+    提出年月　　\submitdate
+\end{center}
+\end{titlepage}}

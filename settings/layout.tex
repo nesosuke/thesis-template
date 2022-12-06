@@ -1,0 +1,29 @@
+% 全体設定
+\renewcommand{\rmdefault}{ptm}  % デフォルトフォントの変更: Times New Roman
+\renewcommand{\sfdefault}{phv}  % デフォルトフォントの変更: Helvetica
+\renewcommand{\ttdefault}{pcr}  % デフォルトフォントの変更: Courier
+% ページ設定
+\usepackage[top=25mm, bottom=25mm,left=30mm, right=15mm, includefoot, footskip=15mm]{geometry}
+\def\linesparpage#1{
+    \baselineskip=\textheight
+    \divide\baselineskip by #1
+} % 1ページあたりの行数
+\linesparpage{40} % 1ページあたりの行数
+% 目次関連
+\renewcommand{\cfttoctitlefont}{\mcfamily\rmfamily} % 目次のタイトルのフォント
+\renewcommand{\cftsecfont}{\mcfamily\rmfamily} % 目次におけるセクションのフォント
+\renewcommand{\cftsubsecfont}{\mcfamily\rmfamily} % 目次におけるサブセクションのフォント
+\renewcommand{\cftsubsubsecfont}{\mcfamily\rmfamily} % 目次におけるサブサブセクションのフォント
+\renewcommand{\cftsecaftersnum}{.} % 目次におけるセクションの番号の後のドット
+\renewcommand{\cftsubsecaftersnum}{.} % 目次におけるサブセクションの番号の後のドット
+\renewcommand{\cftsubsubsecaftersnum}{.} % 目次におけるサブサブセクションの番号の後のドット
+\renewcommand{\cftsecdotsep}{2} % 目次におけるセクションのドットの間隔
+\renewcommand{\cftsubsecdotsep}{2} % 目次におけるサブセクションのドットの間隔
+\renewcommand{\cftsubsubsecdotsep}{2} % 目次におけるサブサブセクションのドットの間隔
+% 見出し関連
+\titleformat*{\section}{\large} % セクション見出しのフォントサイズ
+\titleformat*{\subsection}{\normalsize} % サブセクション見出しのフォントサイズ
+\titleformat*{\subsubsection}{\normalsize} % サブサブセクション見出しのフォントサイズ
+% 図表関連
+\renewcommand{\figurename}{図} % 図番号を「図」に変更
+\renewcommand{\tablename}{表} % 表番号を「表」に変更
