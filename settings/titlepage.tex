@@ -1,3 +1,4 @@
+\newgeometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 \renewcommand{\maketitle}{\begin{titlepage}
 \begin{center}
 
@@ -27,6 +28,7 @@
 \newcommand{\authorinfo}{ %
 \begin{center}
     \begin{table}[ht]
+        \centering
         \begin{tabular}{cll}
         {氏名}     &  & \thesisauthor \\
                    &  & \\
@@ -61,3 +63,5 @@
     提出年月　　\submitdate
 \end{center}
 \end{titlepage}}
+\maketitle
+\restoregeometry
