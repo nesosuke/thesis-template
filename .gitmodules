@@ -1,0 +1,3 @@
+[submodule "jIEEEtran"]
+	path = jIEEEtran
+	url = git@github.com:ehki/jIEEEtran.git

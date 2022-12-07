@@ -1,8 +1,8 @@
 \documentclass[a4paper,12ptj,twoside,openany]{ltjsarticle}
-\input{texfiles/paper_info}
-\input{settings/packages}
-\input{settings/layout}
-\input{settings/titlepage}
+\include{texfiles/paper_info}
+\include{settings/packages}
+\include{settings/layout}
+\include{settings/titlepage}
 
 \begin{document}
 \newgeometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
@@ -16,9 +16,9 @@
 
 \pagenumbering{arabic}
 \include{texfiles/10.introduction}
-\include{texfiles/21.chapter1}
-\include{texfiles/22.chapter2}
-\include{texfiles/23.chapter3}
+\include{texfiles/20.section1}
+\include{texfiles/30.section2}
+\include{texfiles/40.section3}
 \include{texfiles/80.conclusion}
 \include{texfiles/90.acknowledgements}
 \include{texfiles/99.references}
