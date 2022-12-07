@@ -28,4 +28,6 @@
 \renewcommand{\figurename}{図} % 図番号を「図」に変更
 \renewcommand{\tablename}{表} % 表番号を「表」に変更
 % 文献関連
-\renewcommand{\cite}[1]{\textsuperscript{(#1)}} % 参照文献の番号を上付きに変更
+\makeatletter
+\renewcommand{\@cite}[1]{\textsuperscript{(#1)}} % 参照文献の番号を上付きに変更
+\makeatother
