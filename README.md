@@ -11,11 +11,6 @@
 2. `abstract_sample.tex`と`main_sample.tex`末尾の`_sample`を削除してください。
 3. `abstract.tex`と`main.tex`中の`\newcommand{\texfiles}{texfiles_sample}`と`\newcommand{\settings}{settings_sample}`を編集してください。
 
-   ```abstract_sample.tex
-   \newcommand{\texfiles}{texfiles_sample} % change this line: "_sample" -> ""
-   \newcommand{\settings}{settings_sample} % change this line: "_sample" -> ""
-   ```
-
    ```main_sample.tex
    \newcommand{\texfiles}{texfiles_sample} % change this line: "_sample" -> ""
    \newcommand{\settings}{settings_sample} % change this line: "_sample" -> ""
@@ -27,4 +22,8 @@
    \newcommand{\citationstyle}{bst/jIEEEtran}
    ```
 
-<!-- 以上を一括で行うには，`setup.bat`を実行してください。 #TODO -->
+以上を一括で行うには，`setup.py`を実行してください。
+
+   ```
+   python3 setup.py
+   ```
