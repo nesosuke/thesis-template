@@ -313,4 +313,9 @@ TSWLatexianTemp*
 
 # End of https://www.toptal.com/developers/gitignore/api/tex
 
-# Additions for the sample tex file
+# Production files
+texfiles/
+figs/
+settings/
+abstract.*
+main.*

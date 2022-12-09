@@ -1,0 +1,29 @@
+\documentclass[a4paper,12ptj,twoside,openany]{ltjsarticle}
+\newcommand{\texfiles}{texfiles_sample} % change this line: "_sample" -> ""
+\newcommand{\settings}{settings_sample} % change this line: "_sample" -> ""
+
+\include{\texfiles/paper_info}
+\include{\settings/packages}
+\include{\settings/layout}
+\include{\settings/titlepage}
+
+\begin{document}
+\newgeometry{margin=2.5cm}
+\maketitle
+\restoregeometry
+\cleardoublepage
+
+\pagenumbering{roman}
+\tableofcontents
+\cleardoublepage
+
+\pagenumbering{arabic}
+\include{\texfiles/10.introduction}
+\include{\texfiles/20.section1}
+\include{\texfiles/30.section2}
+\include{\texfiles/40.section3}
+\include{\texfiles/80.conclusion}
+\include{\texfiles/90.acknowledgements}
+\include{\texfiles/99.references}
+
+\end{document}
