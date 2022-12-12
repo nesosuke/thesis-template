@@ -1,0 +1,71 @@
+\newcommand{\showtitle}{%
+    \leftline{題目}
+    \par
+    \begin{center}
+        {\fontsize{18pt}{18pt}\selectfont\thesistitle}
+        \if{\englishtitle}{}
+        {\fontsize{16pt}{16pt}\selectfont\englishtitle}
+        \else
+        \vspace{32pt}
+        \fi
+    \end{center}
+}
+\newcommand{\showteacher}{ %
+\begin{table}[ht]
+        \centering
+        \large
+        \begin{tabular}{cll}
+            {指導教員} &  & \teacherone
+            \if{\teachertwo}{}{
+                       &  &             \\ \teachertwo}
+            \fi
+            \if{\teacherthree}{} {
+                       &  &             \\ \teachertwo}
+            \fi
+        \end{tabular}
+    \end{table}
+    \if{\teachertwo}{}
+    \\
+    \fi
+    \if{\teacherthree}{}
+    \\
+    \fi
+}
+\newcommand{\showauthor}{%
+\begin{table}[ht]
+        \centering
+        \large
+        \begin{tabular}{cll}
+            {氏名}     &  & \thesisauthor \\
+                       &  &               \\
+            {提出年月} &  & \submitdate
+
+        \end{tabular}
+    \end{table}
+}
+\renewcommand{\maketitle}{%
+    \begin{titlepage}
+        \fontsize{14pt}{14pt}\selectfont
+        \thispagestyle{empty}
+
+            \vspace*{2cm}
+
+            \centerline{\fontsize{24pt}{24pt}\selectfont\titletitle}
+            \vspace{3cm}
+
+            \showtitle
+
+            \vspace{2cm}
+
+            \showteacher
+
+            \vspace{2cm}
+
+            \centerline{\university\faculty\department}
+
+            \vspace{2cm}
+
+            \showauthor
+
+    \end{titlepage}
+}

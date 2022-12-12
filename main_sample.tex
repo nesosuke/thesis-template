@@ -1,14 +1,15 @@
 \documentclass[a4paper,12ptj,twoside,openany]{ltjsarticle}
-\newcommand{\texfiles}{texfiles_sample} % change this line: "_sample" -> ""
-\newcommand{\settings}{settings_sample} % change this line: "_sample" -> ""
+\newcommand{\texfiles}{texfiles_sample}
+\newcommand{\settings}{settings_sample}
 
 \include{\texfiles/paper_info}
 \include{\settings/packages}
 \include{\settings/layout}
-\include{\settings/titlepage}
+% \include{\settings/titlepage_bachelor}
+\include{\settings/titlepage_master}
 
 \begin{document}
-\newgeometry{margin=2.5cm}
+\newgeometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 \maketitle
 \restoregeometry
 \cleardoublepage
