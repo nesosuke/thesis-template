@@ -15,21 +15,11 @@
         \centering
         \large
         \begin{tabular}{cll}
-            {指導教員} &  & \teacherone
-            \if{\teachertwo}{}{
-                       &  &             \\ \teachertwo}
-            \fi
-            \if{\teacherthree}{} {
-                       &  &             \\ \teachertwo}
-            \fi
+            {指導教員} &  & \teacherfirst \\
+                       &  & \teachersecond \\
+                       &  & \teacherthird
         \end{tabular}
     \end{table}
-    \if{\teachertwo}{}
-    \\
-    \fi
-    \if{\teacherthree}{}
-    \\
-    \fi
 }
 \newcommand{\showauthor}{%
 \begin{table}[ht]
